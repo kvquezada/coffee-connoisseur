@@ -1,3 +1,5 @@
+/** HOME.MODULE.CSS **/
+
 /** Mobile first development **/
 
 .container {
@@ -22,8 +24,8 @@
 .cardLayout {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
+  column-gap: 1.5rem /* 24px */;
+  row-gap: 1.5rem /* 24px */;
 }
 
 .card {
@@ -36,10 +38,6 @@
   padding-bottom: 2rem;
   margin-top: 2rem;
   color: var(--text-white-100);
-}
-
-.sectionWrapper {
-  margin-top: 5rem;
 }
 
 /** Breakpoints:
@@ -84,6 +82,7 @@
   .cardLayout {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
 }
 
 @media (min-width: 1024px) {
@@ -91,7 +90,6 @@
     padding-left: 2.5rem /* 40px */;
     padding-right: 2.5rem /* 40px */;
   }
-
   .main {
     margin-top: 5rem /* 80px */;
     padding-left: 2rem /* 32px */;
@@ -108,10 +106,6 @@
 }
 
 @media (min-width: 1280px) {
-  .main {
-    margin-top: 7rem /* 112px */;
-  }
-
   .cardLayout {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
